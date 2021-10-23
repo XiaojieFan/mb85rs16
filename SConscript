@@ -6,9 +6,9 @@ cwd   = GetCurrentDir()
 
 # add mb85rs16 src files.
 if GetDepend('PKG_USING_MB85RS16'):
-src += Glob('src/mb85rs16.c')
+    src += Glob('src/mb85rs16.c')
 if GetDepend('PKG_USING_MB85RS16_SAMPLE'):
-src += Glob('examples/mb85rs16_sample.c')
+    src += Glob('examples/mb85rs16_sample.c')
 # add mb85rs16 include path.
 path  = [cwd + '/inc']
 
